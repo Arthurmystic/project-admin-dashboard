@@ -12,27 +12,112 @@
 
     <div class="main-layout">
         <div class="sidebar">
+            <div class="top-sidebar">
+                <!-- <p> <img id="dashboard-logo" src="./images/view-dashboard-custom.png" alt="dashboard"> 
+                <span id="dashboard-text"> Dashboard</span></p> -->
+
+                <img id="dashboard-logo" src="./images/view-dashboard-custom.png" alt="dashboard">
+                <a href="#" id="dashboard-text">Dashboard</a>
+            </div>
+
+            <div class="mid-sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <img class="icon-logo" id="home-logo" src="./images/home-custom.png" alt="">
+                            <a href="#" class="icon-text" id="home">Home</a>
+                        </li>
+
+                        <li>
+                            <img class="icon-logo" id="profile-logo" src="./images/card-account-details-outline-custom.png" alt="">
+                            <a href="#" class="icon-text" id="profile">Profile</a>
+                        </li>
+
+                        <li>
+                            <img class="icon-logo" id="messages-logo" src="./images/message-custom.png" alt="">
+                            <a href="#" class="icon-text" id="messages">Messages</a>
+                        </li>
+
+                        <li>
+                            <img class="icon-logo" id="history-logo" src="./images/clock-time-eight-custom.png" alt="">
+                            <a href="#" class="icon-text" id="history">History</a>
+                        </li>
+
+                        <li>
+                            <img class="icon-logo" id="tasks-logo" src="./images/file-multiple-custom.png" alt="">
+                            <a href="#" class="icon-text" id="tasks">Tasks</a>
+                        </li>
+
+                        <li>
+                            <img class="icon-logo" id="communities-logo" src="./images/account-group-custom.png" alt="">
+                            <a href="#" class="icon-text" id="communities">Communities</a>
+                        </li>
+
+                        
+                    </ul>
+                </nav>
+
+                <!-- <div class="nav-item">
+                    <img class="icon-logo" id="home-logo" src="./images/home-custom.png" alt="">
+                    <p class="icon-text" id="home">Home</p>
+                </div> -->
+
+            </div>
+
+            <div class="bottom-sidebar">
+                <nav>
+                    <ul>
+                        <li>
+                            <img class="icon-logo" id="settings-logo" src="./images/cog-custom.png" alt="">
+                            <a href="#" class="icon-text" id="settings">Settings</a>
+                        </li>
+                        
+                        <li>
+                            <img class="icon-logo" id="support-logo" src="./images/help-box-custom.png" alt="">
+                            <a href="#" class="icon-text" id="support">Support</a>
+                        </li>
+                        <li>
+                            <img class="icon-logo" id="privacy-logo" src="./images/shield-check-custom.png" alt="">
+                            <a href="#" class="icon-text" id="privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </nav>
+                
+            </div>
 
         </div>
 
         <div class="header">
+
             <div class="header-top-left h-item">
                 <label for="Search-bar">🔍</label>
                 <input type="text" placeholder="Search" name="Search-bar" id="Search-bar">
             </div>
+
             <div class="header-top-right h-item">
-                <div id="bell"> 🔔</div>
-                <div id="logo">👤</div>
+
+                <img id="bell" src="./images/bell-ring-outline.svg" alt="bell">
+
+                <img id="logo-small" src="./images/3.png" alt="logo">
+
                 <div id="logo-name-top">Morgan Oakley</div>
             </div>
+
             <div class="header-bottom-left h-item">
-                Morgan Oakley(@Morgan)
+
+                <!-- <p><img id="logo-large" src="./images/3.png" alt="logo"> <span>Hi there, <br> Morgan Oakley(@morgan)</span> </p> -->
+                <img id="logo-large" src="./images/3.png" alt="logo">
+                <p>Hi there,<br>
+                    <span class="logo-name-bot" id="logo-name-bot">Morgan Oakley(@morgan)</span>
+                </p>
+
             </div>
+
             <div class="header-bottom-right h-item">
                 <button class="button new">New</button>
                 <button class="button upload">Upload</button>
                 <button class="button share">Share</button>
-            
+
             </div>
 
         </div>
@@ -78,13 +163,13 @@
                     <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
                         Donec hendrerit sodales congue... <br>
                         _______________________________</p>
-                        
+
                     <strong>Community Share Day</strong>
-                    <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum 
+                    <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum
                         accumsan porttitor... <br>
                         _______________________________
                     </p>
-                    
+
                     <strong>Updated Privacy Policy</strong>
                     <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla
                         sagittis sem in mattis...</p>
