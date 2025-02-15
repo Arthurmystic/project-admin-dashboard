@@ -9,6 +9,9 @@ body{
     height: 100vh;
     background-color: #e2e8f0;
     margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 *,
@@ -75,7 +78,6 @@ body{
 }
 
 .h-item{
-    /* border: 1px solid red; */
     align-content: center;
     justify-content: center;
 }
@@ -96,14 +98,11 @@ body{
     width: 1.2rem;
     height: auto;
     align-self: center;
-    /* border: 1px solid blue; */
 }
 
 #logo-small{
     width: 1.75rem;
     aspect-ratio: 1 / 1;
-    /* height: calc(width * .1); */
-    /* border: 1px solid blue; */
     align-self: center;
 }
 
@@ -112,7 +111,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     align-self: center;
     font-weight: bold;
-    /* border: 1px solid blue; */
 }
 
 .header-bottom-right{
@@ -122,7 +120,6 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 5px;
-    /* padding-left: 15px; */
 }
 
 button{
@@ -157,10 +154,12 @@ input{
     grid-row: 1 / -1;   
     /* grid-auto-flow: column; */
     /* grid-template-rows: 0.9fr 6fr 12fr; */
-    grid-template: 5rem 15rem 15rem / 1fr 6fr;
+    grid-template: 5rem 15rem 1rem / 1fr 6fr;
     grid-auto-flow: column;
     padding-left: 15px; 
     padding-right: 15px; 
+    margin-bottom: 20px; 
+    /* height: 100%; */
 }
 
 .top-sidebar,.mid-sidebar,.bottom-sidebar{
@@ -195,17 +194,14 @@ ul{
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    /* gap: 1px; */
 }
 
 li{
     display: grid;
-    /* list-style-type: none; */
     grid-template-columns: 1fr 6fr;
     align-items: center;
     gap: 15px;
     padding-left: 5px;
-    /* margin-bottom: 0.2rem; */
     padding: 0px;
     height: 2rem;
 }
@@ -213,30 +209,21 @@ li a.icon-text{
     font-size: 0.9rem;
     text-decoration: none;
     color: white;
-    /* font-weight: bold; */
-    /* padding-left: 10px;
-    margin: 0px; */
-
 }
 
 li .icon-logo{
     width: 1.6rem;
-    /* font-weight: bold; */
     padding-left: 10px;
-    /* margin: 0px; */
 }
 
 
 .main-content{
-    /* border: 1px solid black; */
     /* grid-row: 2 / -1; */
     padding-left: 25px;
     padding-right: 30px;
     padding-top: 15px;
-    /* margin: 15px; */
     display: grid;
     gap: 15px;
-
     grid-template: 1.75rem 1fr / 2fr 1fr;
 }
 
@@ -244,7 +231,6 @@ div.projects{
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     gap: 15px;
-    /* border: 1px solid red; */
 }
 
 div.project-item{
@@ -253,15 +239,33 @@ div.project-item{
     border-radius: 10px;
     background-color: white;
     padding: 15px;
-    height: minmax(150px, 1fr);
+    /* display: grid; 
+    grid-template-rows: 1em 2fr 1em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-item p{
+    justify-self: start;
+    color: green;
+    align-self: start;
+}
+
+.project-icon-container{
+    align-self: end;
+    display: flex;
+    gap: 15px;
+}
+
+.project-item .project-icon{
+    width: 1.0rem;
+    aspect-ratio: 1 / 1;
 }
 
 div.projects-title,div.announcements-title{
     align-self: end;
-    /* border: 1px solid blue; */
     font-weight: bold;
-    /* background-color: red; */
-    /* grid-row: 1; */
  } 
 
  .announcements-and-trending{
@@ -269,7 +273,6 @@ div.projects-title,div.announcements-title{
     grid-auto-flow: column;
     gap: 15px;
     grid-template-rows:  min-content 1.75rem min-content;
-    /* padding: 15px; */
  }
 
  .announcements-container{
@@ -279,7 +282,6 @@ div.projects-title,div.announcements-title{
     height: min-content;
     display: flex;
     flex-direction: column;
-    /* gap: 1px; */
  }
 
  .trending-container{
@@ -290,7 +292,6 @@ div.projects-title,div.announcements-title{
     grid-template-rows: repeat(auto-fill, min(1fr, .5rem)); */
     display: flex;
     flex-direction: column;
-    /* gap: 1px; */
     height: min-content;
  }
 
@@ -306,6 +307,30 @@ div.projects-title,div.announcements-title{
 
  .trending{
     align-self:end;
-    /* font-size: 13px; */
     font-weight: bold;
+ }
+
+ .trending-items{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+ }
+
+ .prof-pics{
+    /* width: 1rem; */
+    height: 1.8rem;
+    aspect-ratio: 1 / 1;
+ }
+
+ footer{
+    border-radius: 2px;
+    align-self: center;
+    justify-self: center;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 15rem;
+    text-align: center;
+    /* position: sticky;
+    bottom: 5px; */
  }
